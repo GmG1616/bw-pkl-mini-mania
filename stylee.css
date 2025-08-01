@@ -1,28 +1,137 @@
-.beri-komentar {
-  text-align: center;
-  padding: 30px;
-  background-color: #f9f9ff;
-  border-top: 1px solid #ddd;
-  margin-top: 60px;
+/* Reset dan font dasar */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  color: #333;
+  line-height: 1.7;
 }
 
-.beri-komentar h3 {
-  font-size: 1.5rem;
-  margin-bottom: 16px;
+/* Container umum */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* About Hero Section */
+.about-hero {
+  position: relative;
+  margin: 90px 0 60px;
+  padding: 40px 20px;
+  background: #f5f5fc;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(39, 2, 103, 0.15);
+}
+
+.about-hero .overlay {
+  display: none; /* tidak perlu overlay gelap lagi karena gambar ada di samping */
+}
+
+.about-hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  max-height: 350px;
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.about-text h2 {
+  font-size: 2.8rem;
   color: #270267;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 1.1px;
 }
 
-.beri-komentar button {
-  padding: 12px 24px;
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #444;
+  font-weight: 500;
+}
+
+/* Bagian konten detail bawah */
+.about-content {
+  background-color: #fff;
+  padding: 50px 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(39, 2, 103, 0.12);
+  margin-bottom: 80px;
+}
+
+.about-details p {
+  font-size: 1.15rem;
+  color: #3a3a3a;
+  margin-bottom: 28px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/* Sosial media */
+.sosialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tiktok,
+.instagram {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #270267;
+  font-weight: 700;
   font-size: 1rem;
-  background-color: #270267;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-.beri-komentar button:hover {
-  background-color: #522b9b;
+.tiktok:hover,
+.instagram:hover {
+  color: #52a6fb;
+}
+
+.tiktok img,
+.instagram img {
+  width: 28px;
+  height: 28px;
+}
+
+/* Responsive untuk tampilan mobile */
+@media (max-width: 768px) {
+  .about-hero-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .about-image img {
+    max-height: 280px;
+  }
+  .about-text h2 {
+    font-size: 2.2rem;
+  }
+  .about-text p {
+    font-size: 1.1rem;
+  }
+  .about-content {
+    padding: 35px 20px;
+  }
+  .about-details p {
+    font-size: 1rem;
+  }
 }
