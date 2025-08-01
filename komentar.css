@@ -1,0 +1,47 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.komentar {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.komentar:last-child {
+  border-bottom: none;
+}
+
+.komentar .nama {
+  font-weight: bold;
+  font-size: 16px;
+  color: #444;
+}
+
+.komentar .waktu {
+  font-size: 13px;
+  color: #888;
+}
+
+.komentar .isi {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #333;
+}

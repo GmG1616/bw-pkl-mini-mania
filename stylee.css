@@ -1,0 +1,28 @@
+.beri-komentar {
+  text-align: center;
+  padding: 30px;
+  background-color: #f9f9ff;
+  border-top: 1px solid #ddd;
+  margin-top: 60px;
+}
+
+.beri-komentar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: #270267;
+}
+
+.beri-komentar button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #270267;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.beri-komentar button:hover {
+  background-color: #522b9b;
+}

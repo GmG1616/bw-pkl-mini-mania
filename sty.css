@@ -1,0 +1,149 @@
+/* Reset dan base styling */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  padding-top: 80px;
+}
+
+/* Background overlay (opsional, bisa dihapus jika tidak dibutuhkan) */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Navbar */
+.navv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #270267;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 10;
+}
+
+.logoo {
+  height: 40px;
+  width: auto;
+}
+
+.gambar-ww {
+  display: flex;
+  align-items: center;
+}
+
+/* Waktu dan Tanggal di Navbar */
+.datetime {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+/* Kontainer Umum */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Deskripsi Section */
+.des-container {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.des-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.des-container h3 {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 20px auto 0;
+}
+
+/* Gambar dan Caption */
+.gambar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gambar-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.gambar-container figcaption {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: gray;
+}
+
+/* Video Styling (sama dengan gambar) */
+.vid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.vid video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .navv {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .des-container h2 {
+    font-size: 20px;
+  }
+
+  .des-container h3 {
+    font-size: 15px;
+  }
+}

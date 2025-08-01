@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tentang Kami - Mini Mania</title>
+    <link rel="stylesheet" href="stylee.css" />
+  </head>
+  <body>
+    <section class="about-hero">
+      <div class="overlay"></div>
+      <div class="container about-hero-content">
+        <div class="about-image">
+          <img
+            src="https://blog.bookingtogo.com/wp-content/uploads/2023/05/mini-mania-lembang.jpg"
+            alt="Mini Mania"
+          />
+        </div>
+        <div class="about-text">
+          <h2>Tentang Mini Mania</h2>
+          <p>
+            Mini Mania adalah destinasi wisata unik yang menyajikan miniatur
+            bangunan ikonik dari seluruh dunia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-content">
+      <div class="container about-details">
+        <p>
+          Terletak di jantung alam Indonesia, kami menggabungkan edukasi dan
+          hiburan dalam satu tempat yang ramah keluarga.
+        </p>
+        <p>
+          Kami percaya bahwa belajar tentang dunia bisa dimulai dari pengalaman
+          yang menyenangkan. Dengan berbagai spot foto menarik, wahana
+          interaktif, dan taman tematik, Mini Mania cocok untuk segala usia.
+        </p>
+        <p>
+          Visi kami adalah menjadi destinasi wisata edukatif terbaik di
+          Indonesia, memperkenalkan budaya dunia dalam bentuk miniatur yang
+          menginspirasi rasa ingin tahu dan cinta terhadap keragaman di dunia.
+        </p>
+      </div>
+    </section>
+
+    <section class="sosialmedia">
+      <a
+        href="https://www.tiktok.com/@minimania.lembang"
+        target="_blank"
+        class="tiktok"
+        rel="noopener"
+      >
+        <img src="sosialmedia/tiktok_logo_icon_189233.webp" alt="TikTok" />
+        <span>TikTok</span>
+      </a>
+
+      <a
+        href="https://www.instagram.com/mini.mania.lembang"
+        target="_blank"
+        class="instagram"
+        rel="noopener"
+      >
+        <img src="sosialmedia/Instagram_logo_2022.svg.png" alt="Instagram" />
+        <span>Instagram</span>
+      </a>
+    </section>
+
+    <section class="lokasi">
+      <div class="container">
+        <h2>Lokasi Kami</h2>
+        <div class="maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63356.964406755135!2d107.58192067658691!3d-6.824270584266976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e1f1a6e4495b%3A0xd2b0b66f6ea0862b!2sMini%20Mania%20Lembang!5e0!3m2!1sen!2sid!4v1722330000000!5m2!1sen!2sid"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Komentar -->
+    <section class="beri-komentar">
+      <div class="container">
+        <h3>Punya Saran atau Komentar?</h3>
+        <form action="komentar.php" method="POST">
+          <label for="nama">Nama:</label><br />
+          <input type="text" id="nama" name="nama" required /><br /><br />
+
+          <label for="komentar">Komentar:</label><br />
+          <textarea id="komentar" name="komentar" rows="5" required></textarea
+          ><br /><br />
+
+          <button type="submit">Kirim Komentar</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

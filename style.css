@@ -1,0 +1,322 @@
+/* Reset dan font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background image semi-transparan */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("https://blog.bookingtogo.com/wp-content/uploads/2023/05/mini-mania-lembang.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Body */
+body {
+  background-color: #fff;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Judul utama */
+h1 {
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  font-weight: 900;
+  font-size: 3.5rem;
+  user-select: none;
+}
+
+/* Navbar */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #270267;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo gambar */
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+/* Menu utama */
+.data-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Menu item */
+.data-list li {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Link menu */
+.data-list a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: color 0.3s ease;
+}
+
+/* Hover menu */
+.data-list a:hover,
+.data-list li:hover > a {
+  color: #52a6fb;
+}
+
+/* Dropdown arrow rotation */
+.fa-angle-down {
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+}
+
+.wisata:hover .fa-angle-down {
+  transform: rotate(-90deg);
+}
+
+/* Dropdown menu */
+.list {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: #333;
+  border-radius: 6px;
+  padding: 10px 15px;
+  min-width: 140px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+/* Tampilkan dropdown saat hover */
+.wisata:hover .list {
+  display: block;
+}
+
+/* Dropdown list items */
+.list li {
+  color: aliceblue;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover dropdown item */
+.list li:hover {
+  color: chartreuse;
+  background-color: #270267;
+}
+
+/* Header section */
+.header {
+  max-width: 1100px;
+  margin: 130px auto 60px;
+  padding: 0 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Deskripsi header */
+.des-header {
+  flex: 1 1 300px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.des-header h1 {
+  font-size: 3.8rem;
+  font-weight: 900;
+  color: #270267;
+  white-space: normal;
+}
+
+/* Gambar header */
+.gambar {
+  flex: 1 1 300px;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.gambar img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(39, 2, 103, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.gambar img:hover {
+  transform: scale(1.05);
+}
+
+/* Container kartu */
+.bg-card {
+  max-width: 1100px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Kartu */
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 250px;
+  cursor: pointer;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(39, 2, 103, 0.5);
+  transform: translateY(-10px);
+}
+
+/* Gambar di kartu */
+.gambar-card {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-bottom: 3px solid #270267;
+}
+
+.gambar-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.5s ease;
+}
+
+.card:hover .gambar-card img {
+  transform: scale(1.3);
+}
+
+/* Deskripsi kartu */
+.des-card {
+  padding: 15px 20px;
+}
+
+.des-card h2 {
+  color: #270267;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.des-card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Sosial media section */
+.sosialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.tiktok,
+.instagram {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.tiktok img,
+.instagram img {
+  width: 28px;
+  height: 28px;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.15));
+}
+
+.tiktok span,
+.instagram span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #270267;
+}
+
+/* Footer */
+.footer {
+  background-color: #270267;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .des-header,
+  .gambar {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .des-header h1 {
+    font-size: 2.8rem;
+    white-space: normal;
+  }
+
+  .gambar img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .bg-card {
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .data-list {
+    gap: 1rem;
+  }
+}

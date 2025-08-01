@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sty.css" />
+    <title>Mini Mania - Wahana Seru</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navv">
+      <div class="gambar-ww">
+        <img src="gambar-ww/cc.png" alt="Mini Mania" class="logoo" />
+      </div>
+      <div class="datetime" id="datetime"></div>
+    </div>
+
+    <!-- Video -->
+    <div class="container">
+      <div class="vid">
+        <video autoplay muted controls>
+          <source
+            src="video/DESTINASI WISATA _ MINI MANA _ LEMBANG BANDUNG _ REVIEW LENGKAP WAHANA & TIKET MASUK.mp4"
+            type="video/mp4"
+          />
+          Browser tidak mendukung pemutar video.
+        </video>
+      </div>
+    </div>
+
+    <!-- Konten Wahana -->
+    <div class="bg-container">
+      <div class="container">
+        <!-- 1. Fun Archery -->
+        <div class="des-container">
+          <h2>1. Fun Archery</h2>
+          <figure class="gambar-container">
+            <img src="gambar-container/archeryy.jpg" alt="Fun Archery" />
+            <figcaption>Foto dari Mini Mania</figcaption>
+          </figure>
+          <h3>
+            Wahana panahan (Fun Archery) memungkinkan pengunjung mencoba sensasi
+            menjadi pemanah dengan target yang tersedia. Selain itu, setelah
+            puas memanah, pengunjung dapat memberi makan bebek, merpati, dan
+            ikan di area yang sama.
+          </h3>
+        </div>
+
+        <!-- 2. Shoot The Moo -->
+        <div class="des-container">
+          <h2>2. Shoot The Moo</h2>
+          <figure class="gambar-container">
+            <img src="gambar-container/shootthemoo.jpg" alt="Shoot the Moo" />
+            <figcaption>Foto dari Mini Mania</figcaption>
+          </figure>
+          <h3>
+            Wahana "Shoot the Moo" di Mini Mania Lembang adalah wahana permainan
+            menembak yang menargetkan target berbentuk sapi. Cocok bagi
+            pengunjung yang suka tantangan!
+          </h3>
+        </div>
+
+        <!-- 3. Sakura River Cruise -->
+        <div class="des-container">
+          <h2>3. Sakura River Cruise</h2>
+          <figure class="gambar-container">
+            <img
+              src="gambar-container/Pengunjung-naik-sampan-di-Sakura-River-Cruise-yang-berlokasi-di-Mini-Mania.jpg"
+              alt="Sakura River Cruise"
+            />
+            <figcaption>Foto dari Mini Mania</figcaption>
+          </figure>
+          <h3>
+            Wahana perahu menyusuri sungai buatan sambil menikmati keindahan
+            bunga sakura. Disediakan juga penyewaan kimono untuk nuansa Jepang
+            yang lebih terasa.
+          </h3>
+        </div>
+
+        <!-- 4. Costume Rental -->
+        <div class="des-container">
+          <h2>4. Costume Rental</h2>
+          <figure class="gambar-container">
+            <img src="gambar-container/baju.jpg" alt="Costume Rental Kimono" />
+            <figcaption>Foto dari Mini Mania</figcaption>
+          </figure>
+          <h3>
+            Pengunjung dapat menyewa kimono dan berfoto di spot Instagramable
+            dengan latar miniatur dunia. Menambah kesan otentik ala Jepang saat
+            berkunjung ke Mini Mania.
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script waktu -->
+    <script>
+      function updateDateTime() {
+        const now = new Date();
+        const options = {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+        };
+        const datetimeString = now.toLocaleDateString("id-ID", options);
+        document.getElementById("datetime").textContent = datetimeString;
+      }
+      setInterval(updateDateTime, 1000);
+      updateDateTime();
+    </script>
+  </body>
+</html>
