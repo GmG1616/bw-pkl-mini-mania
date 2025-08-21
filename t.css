@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("https://blog.bookingtogo.com/wp-content/uploads/2023/05/mini-mania-lembang.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1;
+}
+
 body {
   font-family: "Segoe UI", sans-serif;
   background-color: #f0f8ff;

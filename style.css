@@ -241,6 +241,53 @@ h1 {
   line-height: 1.4;
 }
 
+.container {
+  max-width: 960px;
+  margin: 10px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #1d3557;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.map-section {
+  flex: 1 1 60%;
+  min-width: 300px;
+}
+
+.hours-box {
+  flex: 1 1 35%;
+  background: #1d3557;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 250px;
+}
+
+.hours-box h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.hours-box p {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
 /* Sosial media section */
 .sosialmedia {
   display: flex;
@@ -273,6 +320,7 @@ h1 {
 }
 
 /* Footer */
+
 .footer {
   background-color: #270267;
   color: white;
@@ -283,7 +331,6 @@ h1 {
   letter-spacing: 1px;
   user-select: none;
 }
-
 /* Responsive */
 @media (max-width: 768px) {
   .header {

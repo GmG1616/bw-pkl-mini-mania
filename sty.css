@@ -22,9 +22,29 @@ body::before {
   z-index: -1; /* Pastikan ada di belakang konten */
 }
 
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #270267;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo gambar */
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
 h2 {
   color: #1a1a1a;
-  margin: 10px 0 20px;
+  margin: 180px 0 20px;
 }
 
 /* Slider container */
@@ -34,7 +54,7 @@ h2 {
   max-width: 980px;
   margin: 0 auto;
   overflow: hidden;
-  padding: 10px 40px; /* ruang untuk tombol */
+  padding: 10px 70px; /* ruang untuk tombol */
   box-sizing: border-box;
 }
 
@@ -44,7 +64,7 @@ h2 {
   overflow-x: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  gap: 20px;
+  gap: 40px;
   padding-bottom: 10px;
 }
 
@@ -168,4 +188,21 @@ h2 {
   .card img {
     height: 140px;
   }
+}
+
+/*footer*/
+
+.footer {
+  background-color: #270267;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  user-select: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
